@@ -35,3 +35,10 @@ if (isPalindrome(userWord)){
     console.log("la parola non è palindroma");
 }
 // console.log(userWord);
+
+const parolaDiProva = "parola";
+if (isPalindrome(parolaDiProva)){
+    console.log("la parola è palindroma")
+}else {
+    console.log("la parola non è palindroma");
+}
