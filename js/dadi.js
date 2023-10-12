@@ -1,5 +1,6 @@
 // console.log("dadi");
-
+const h1DOMElement = document.getElementById("result");
+console.log(h1DOMElement);
 const userChoise = prompt("scgli pari o dispari");
 console.log(userChoise);
 
@@ -23,11 +24,15 @@ console.log(isEvenSumOfNumbers);
 
 if (isEvenSumOfNumbers && userChoise === "pari") {
     console.log("hai vinto");
+    h1DOMElement.append("hai vinto");
+
 
 } else if (isEvenSumOfNumbers === false && userChoise ==="dispari") {
     console.log("hai vinto");
+    h1DOMElement.append("hai vinto");
 } else {
-    console.log("hai perso")
+    console.log("hai perso");
+    h1DOMElement.append("hai perso");
 }
 
 
