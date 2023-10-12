@@ -13,11 +13,23 @@ if (userNumber < 1 || userNumber > 5) {
 const pcNumber = getRandomInt(1, 5);
 console.log(pcNumber);
 
+// somma dei numeri 
 const sumOfNumbers = getSum(userNumber, pcNumber);
 console.log(sumOfNumbers);
 
-// const provaSomma = getSum(2, 3);
-// console.log(provaSomma);
+const isEvenSumOfNumbers = isEven(sumOfNumbers);
+console.log(isEvenSumOfNumbers);
+
+
+if (isEvenSumOfNumbers && userChoise === "pari") {
+    console.log("hai vinto");
+
+} else if (isEvenSumOfNumbers === false && userChoise ==="dispari") {
+    console.log("hai vinto");
+} else {
+    console.log("hai perso")
+}
+
 
 
 
@@ -31,8 +43,21 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
     // The maximum is exclusive and the minimum is inclusive
 }
+// const provaSomma = getSum(2, 3);
+// console.log(provaSomma);
 // funzione per fare una somma 
 function getSum(numA, numB) {
-   const sum = numA + numB
+    const sum = numA + numB
     return sum
+}
+// const testPari = isEven(3);
+// console.log(testPari);
+// funzione per verificare se un numero è pari 
+function isEven(num) {
+    if (num % 2 === 0){
+        return true
+    } else {
+        return false
+    }
+
 }
