@@ -27,18 +27,13 @@ if (isEvenSumOfNumbers && userChoise === "pari") {
     h1DOMElement.append("hai vinto");
 
 
-} else if (isEvenSumOfNumbers === false && userChoise ==="dispari") {
+} else if (!isEvenSumOfNumbers && userChoise ==="dispari") {
     console.log("hai vinto");
     h1DOMElement.append("hai vinto");
 } else {
     console.log("hai perso");
     h1DOMElement.append("hai perso");
 }
-
-
-
-
-
 
 
 // funzione per generare un numero 

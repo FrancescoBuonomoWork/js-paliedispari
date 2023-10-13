@@ -12,6 +12,7 @@ console.log(userWord.length);
 // console.log(ArrayReverse);
 
 function isPalindrome(word) {
+    word = word.toLowerCase();
     const fromWordToArray = word.split("");
     console.log(fromWordToArray);
     const arrayReverse = fromWordToArray.reverse();
